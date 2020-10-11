@@ -1,0 +1,21 @@
+https://www.codewars.com/kata/55f2b110f61eb01779000053/solutions/javascript/me/best_practice
+
+
+function getSum( a,b ) {
+  if (a === b) return a;
+  let sum = 0;
+  let higher;
+  let lower;
+  if (a > b) {
+   higher = a;
+   lower = b;
+  } else {
+     higher = b;
+     lower = a;
+    }
+ 
+ for (let i = lower; i <= higher; i++){
+       sum += i;
+ }
+  return sum;
+}
