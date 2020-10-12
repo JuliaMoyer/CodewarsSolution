@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57216d4bcdd71175d6000560/solutions/javascript/me/best_practice
+
+
+function padIt(str,n){
+  let i = 1;
+  let p = '*';
+   while (i <= n) {
+     if (i % 2 !== 0) str = p + str;
+     if (i % 2 === 0) str = str + p;
+     i++;
+   }  
+   return  str;
+}
