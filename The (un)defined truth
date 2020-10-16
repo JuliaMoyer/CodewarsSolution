@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5a3e44f8b6cfd785c300008c/solutions/javascript
+
+function output() {
+  return (typeof x).slice([NaN, NaN].length)
+}
