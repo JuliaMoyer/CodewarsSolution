@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57f6ad55cca6e045d2000627/solutions/javascript/me/best_practice
+
+function squareOrSquareRoot(array) {
+  let arr = [];
+  let x;
+  for (let i = 0; i < array.length; i++) {
+    if (Number.isInteger(Math.sqrt(array[i])) === true) {arr.push(Math.sqrt(array[i]));}
+    else {arr.push(array[i] ** 2);}  
+  }
+  return arr;  
+}
