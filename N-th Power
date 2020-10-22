@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57d814e4950d8489720008db/solutions/javascript/me/best_practice
+
+function index(array, n){
+  let num;
+  for (let i = 0; i < array.length; i++) {
+    if (n > array.length - 1) return -1;
+    if (i === n) return Math.pow(array[i], n);
+  }
+}
