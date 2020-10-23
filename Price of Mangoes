@@ -1,0 +1,10 @@
+
+
+function mango(quantity, price){
+  if (quantity < 2) return quantity * price;
+  let count = 0;
+  for (let i = 3; i <= quantity; i += 3) {
+    count++;
+  }
+  return (quantity - count) * price;
+}
