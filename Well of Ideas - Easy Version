@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/57f222ce69e09c3630000212/solutions/javascript/me/best_practice
+
+function well(x){
+  let good = x.filter(el => el === 'good').length;
+  if (good === 0) return 'Fail!';
+  if (good === 1 || good === 2) return 'Publish!';
+  if (good >= 3) return 'I smell a series!';
+}
