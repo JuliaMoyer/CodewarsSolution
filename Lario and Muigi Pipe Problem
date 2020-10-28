@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/56b29582461215098d00000f/solutions/javascript/me/best_practice
+
+function pipeFix(numbers){
+  let arrNew = [];
+  for (let i = numbers[0]; i <= Math.max(...numbers); i++){
+    arrNew.push(i);
+  }
+  return arrNew;
+}
