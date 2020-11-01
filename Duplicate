@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/599b6f883c52928dbe00006a/solutions/javascript/me/best_practice
+
+function existsDuplicate(arr){
+   return arr.filter((el, i) => arr.indexOf(el) !== arr.lastIndexOf(el)).length !== 0; 
+}
