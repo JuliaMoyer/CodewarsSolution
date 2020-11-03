@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/57293671c98f77e84b000065/solutions/javascript/me/best_practice
+
+function type(value) {
+  switch (typeof(value)) {
+    case 'object':
+    if (value instanceof Array) return 'array';
+    if (value instanceof Date) return 'date';
+    if (value instanceof RegExp)return 'regexp';
+    if (value instanceof String) return 'string';
+    if (value instanceof Number) return 'number';
+    if (value === null) return 'null';
+    default: return typeof(value);
+    } 
+  return typeof value;
+}
