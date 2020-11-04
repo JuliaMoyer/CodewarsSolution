@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57faa6ff9610ce181b000028/solutions/javascript/me/best_practice
+
+function crap(x, bags, cap){
+  let count = 0;
+  for (let i = 0; i < x.length; i++) {
+    for (let k = 0; k <= x[i].length; k++) {
+      if (x[i][k] === '@') count++;
+      if (x[i][k] === 'D') return "Dog!!";
+    }
+  }
+  return (count <= bags && count <= cap) ? "Clean" : "Cr@p";
+}
