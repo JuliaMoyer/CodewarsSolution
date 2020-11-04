@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5d59576768ba810001f1f8d6/solutions/javascript/me/best_practice
+
+function quadratic(x1, x2){
+  let arr=[1];
+  arr.push(-(x1+x2));
+  arr.push(x1*x2);
+  return arr;
+}
