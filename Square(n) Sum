@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/515e271a311df0350d00000f/solutions/javascript/me/best_practice
+
+function squareSum(numbers){
+  let mult = 0;
+  for (let el of numbers) {
+    mult += el ** 2;
+  }
+  return mult;
+}
