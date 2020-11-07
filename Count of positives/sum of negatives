@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/576bb71bbbcf0951d5000044/solutions/javascript/me/best_practice
+
+function countPositivesSumNegatives(input) {
+  if (input == null || input.length < 1)return [];
+  let pos = 0;
+  let neg = 0;
+  let arr1 = [];
+  for (let el of input) {
+    if (el > 0){pos++;}
+    else {neg+=el;}
+  }
+  arr1.push(pos, neg);
+  return arr1;  
+}
