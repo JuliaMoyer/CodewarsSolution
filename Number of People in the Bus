@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5648b12ce68d9daa6b000099/solutions/javascript/me/best_practice
+
+var number = function(busStops){
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 0; i < busStops.length; i++) {
+    for (let k = 0; k < busStops[i].length; k++) {
+      if (k % 2 === 0) {
+        sum1 += busStops[i][k];
+      } else {
+        sum2 += busStops[i][k];
+      } 
+    }
+  }
+  return sum1 - sum2;
+}
