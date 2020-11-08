@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/solutions/javascript/me/best_practice
+
+function find_average(array) {
+  let mid = 0;
+  let sum = 0;
+  for (let el of array) {
+    sum += el;
+    mid = sum / array.length;
+  }
+  return mid;
+}
