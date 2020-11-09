@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5949481f86420f59480000e7/solutions/javascript/me/best_practice
+
+function oddOrEven(array) {
+  if (array.length === 0) return 'even';
+  let sum = 0;
+  for (let el of array) {
+    sum += el;
+  }
+  return (sum % 2 === 0) ? 'even' : 'odd';
+}
