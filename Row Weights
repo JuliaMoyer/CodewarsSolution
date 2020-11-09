@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5abd66a5ccfd1130b30000a9/solutions/javascript/me/best_practice
+
+function rowWeights(array){
+  let team1Weight = 0;
+  let team2Weight = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (i % 2 === 0) {
+      team1Weight += array[i];
+    } else {
+     team2Weight += array[i]; 
+    }
+  }
+  if (array.length === 2) return array;
+  return [team1Weight, team2Weight];
+}
