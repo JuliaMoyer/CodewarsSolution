@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/527b3cd0492b6b15250060af/solutions/javascript/me/best_practice
+
+let items = [];
+let obj = {a: "b", c: "d"};
+items.push(obj); 
