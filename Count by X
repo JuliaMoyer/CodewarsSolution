@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5513795bd3fafb56c200049e/solutions/javascript/me/best_practice
+
+function countBy(x, n) {
+  let arr = [];
+  let count = x;
+  for (let i = 1; i <= n; i++) {
+    arr.push(count);
+     count += x;
+  }
+  return arr;
+}
