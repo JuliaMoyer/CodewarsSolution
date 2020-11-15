@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58646a1173bd9c86080000ef/solutions/javascript/me/best_practice
+
+  function  fibonacci(num){
+  if(num === 0) return 0; 
+  let arr = [1, 1];
+  for(let i=arr.length; i<num; i++) {
+    arr[i] = arr[i-1] + arr[i-2]
+   }
+  return arr[arr.length-1];
+}
