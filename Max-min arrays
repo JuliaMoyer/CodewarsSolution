@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5a090c4e697598d0b9000004/solutions/javascript/me/best_practice
+
+function solve(arr){
+  let arr1 = [];
+  let i = 0;
+  while(arr.length > 1 && arr.length) {
+    arr1.push(Math.max(...arr));
+    arr1.push(Math.min(...arr));
+    let b = arr.indexOf(Math.max(...arr)); arr.splice(b, 1);
+    let c = arr.indexOf(Math.min(...arr)); arr.splice(c, 1);
+  }
+  arr1.push(arr[i]);
+  return arr1.filter(v => v != undefined);
+}
