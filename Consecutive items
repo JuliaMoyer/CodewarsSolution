@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5f6d533e1475f30001e47514/solutions/javascript/me/best_practice
+
+function consecutive(arr, a, b) {
+  let indA = arr.indexOf(a);
+  let indB = arr.indexOf(b);
+  return indA === indB + 1 || indA + 1 === indB ? true: false;
+}
