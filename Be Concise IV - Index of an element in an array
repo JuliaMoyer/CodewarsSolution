@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5703c093022cd1aae90012c9/solutions/javascript/me/best_practice
+
+function find(arr, el) {
+  return arr.indexOf(el)===-1?"Not found":arr.indexOf(el);
+}
