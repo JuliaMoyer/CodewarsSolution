@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/580a4001d6df740d61000301/solutions/javascript/me/best_practice
+
+function completeSeries(arr) {
+  let arr1 = [0];
+  for (let i = 1; i <= Math.max(...arr); i++) {
+    if (arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])) return [0];
+    arr1.push(i);
+  }
+  return arr1;
+}
