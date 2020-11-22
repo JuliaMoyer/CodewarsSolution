@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5656b6906de340bd1b0000ac/solutions/javascript/me/best_practice
+
+function longest(s1, s2) {
+  let s3 = s1 + s2;
+  let arr = [];
+  for (let i = 0; i < s3.length; i++) {
+    if (i === s3.indexOf(s3[i])) {
+      arr.push(s3[i]);
+    }
+  }
+  return arr.sort().join('');
+} 
+ 
