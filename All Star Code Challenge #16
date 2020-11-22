@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/586566b773bd9cbe2b000013/solutions/javascript/me/best_practice
+
+function noRepeat(str) {  
+  let arr = [];
+  for (let el of str){
+    arr.push(el);
+  }
+  let arr1 = arr.filter((el, i) => arr.indexOf(el) === arr.lastIndexOf(el));
+  if (arr1.length > 1) return arr1[0];
+  return arr1.join('');
+}
