@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5583090cbe83f4fd8c000051/solutions/javascript/me/best_practice
+
+function digitize(n) {
+  let arr = [];
+  do {
+    arr.push(n % 10);
+    n = (n - n % 10) / 10;
+  } while (n)
+  return arr;
+}
