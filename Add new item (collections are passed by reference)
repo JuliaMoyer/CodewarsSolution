@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/566dc05f855b36a031000048/solutions/javascript/me/best_practice
+
+function addExtra( listOfNumbers ){
+  let res = listOfNumbers.concat(6);
+  return res;
+}
