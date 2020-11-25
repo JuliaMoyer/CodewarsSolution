@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/596fba44963025c878000039/solutions/javascript/me/best_practice
+
+function contamination(text, char){
+  return text.replace(/./g, char);
+}
