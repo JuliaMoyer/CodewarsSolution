@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/solutions/javascript/me/best_practice
+
+function minSum(arr) {
+  let sum = 0;
+  arr.sort((a, b) => a - b);
+  while(arr.length > 2 && arr.length) {
+    sum += Math.min(...arr) * Math.max(...arr);
+    let b = arr.indexOf(Math.max(...arr)); arr.splice(b, 1);
+    let c = arr.indexOf(Math.min(...arr)); arr.splice(c, 1);
+  }
+  sum += Math.max(...arr) * Math.min(...arr);
+  return sum;
+}
