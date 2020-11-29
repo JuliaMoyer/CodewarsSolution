@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/57a37f3cbb99449513000cd8/solutions/javascript/me/best_practice
+
+function getNumberFromString(s) {
+console.log(s)
+ return +s.replace(/[a-z, :, ' ', $]/gi,'')
+  
+}
