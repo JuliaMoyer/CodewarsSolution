@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5835e18aae05334410000032/solutions/javascript/me/best_practice
+
+function replaceVogals(str) {
+  return str.replace(/[euioa]/g, '?');
+}
