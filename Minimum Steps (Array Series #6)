@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5a91a7c5fd8c061367000002/solutions/javascript/me/best_practice
+
+function minimumSteps(numbers, value){
+  numbers.sort((a,b) => a - b);
+  let count = 0;
+  let sum = numbers[0];
+  if (sum > value) return 0;
+  for (let i = 1; i < numbers.length; i++) {
+    sum += numbers[i];
+    count++;
+    if (sum >= value) break;
+  }
+  return count;
+}
