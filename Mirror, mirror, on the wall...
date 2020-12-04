@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5f55ecd770692e001484af7d/solutions/javascript/me/best_practice
+
+function mirror(data) {
+  let arr1 = data.slice();
+  let arr2 = data.slice();
+  arr1 = arr1.sort((a, b)=> a - b);
+  arr2 = arr2.sort((a,b) => b - a).slice(1);
+  return [...arr1, ...arr2].concat();
+}
