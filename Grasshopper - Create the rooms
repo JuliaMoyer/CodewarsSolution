@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/56a29b237e9e997ff2000048/solutions/javascript/me/best_practice
+
+var rooms = {
+  first: {
+    name: "One",
+    description: "This is the first room",
+    completed: "True",
+  },
+  second: {
+    name: "Two",
+    description: "This is the second room",
+    completed: "True",
+  },
+    third: {
+    name: "Three",
+    description: "This is the third room",
+    completed: "True",
+  }
+}
