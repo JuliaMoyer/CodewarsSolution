@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5b4e474305f04bea11000148/solutions/javascript/me/best_practice
+
+function digits(num){
+  let num2 = String(num).split('').map(el => Number(el));
+  let arr2 = [];
+  for (let i = 0; i < num2.length; i++) {
+    for (let k = i + 1; k < num2.length; k++) {
+      arr2.push(num2[i] + num2[k]);
+    }
+  }
+  return arr2;
+}
