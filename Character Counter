@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56786a687e9a88d1cf00005d/solutions/javascript/me/best_practice
+
+function validateWord(s){
+  s = s.toLowerCase();
+  let arr = [...s].filter((el, i) => s.indexOf(el) === s.lastIndexOf(el));
+  return (arr.length === 0 || arr.length === s.length) ? true : false;
+}
