@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/571b6a4a7beb0a8ade0007a8/solutions/javascript/me/best_practice
+
+function bloodAlcoholContent(drinks, weight, sex, time){
+  let r;
+  if (sex ===  'male') r = 0.73;
+  if (sex === 'female') r = 0.66; 
+  return +(((drinks.abv * drinks.ounces) * 5.14 / weight * r) - .015 * time).toFixed(4);
+}
