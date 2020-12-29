@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/solutions/javascript/me/best_practice
+
+function arrayPlusArray(arr1, arr2) {
+  let arr = arr1.concat(arr2);
+  return arr.reduce((a, b) => a + b, 0);
+}
