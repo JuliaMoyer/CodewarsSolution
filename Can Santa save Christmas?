@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5857e8bb9948644aa1000246/solutions/javascript/me/best_practice
+
+function determineTime(arr){
+  let arr2 = arr.join(',').replace(/\D/g, '').split('');
+  let hours = 0;
+  let minutes = 0;
+  let seconds = 0;
+  for (let i = 0; i < arr2.length; i+=6) {
+    hours += +(arr2[i] + arr2[i + 1]);
+    minutes += +(arr2[i + 2] + arr2[i + 3]);
+    seconds += +(arr2[i + 4] + arr2[i + 5]); 
+  }
+  let sum = hours * 3600 + minutes * 60 + seconds;
+  return sum <= 86400;
+}
