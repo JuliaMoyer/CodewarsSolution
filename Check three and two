@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5a9e86705ee396d6be000091/solutions/javascript/me/best_practice
+
+function checkThreeAndTwo(array) {
+  let obj = {};
+  for (let el of array) {
+    if (el in obj) {
+      obj[el]++;
+    } else {
+      obj[el] = 1;
+    }
+  }
+  return Object.values(obj).filter( el => el > 3 || el < 2).length === 0;
+}
