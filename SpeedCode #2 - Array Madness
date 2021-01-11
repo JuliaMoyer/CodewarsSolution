@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1/solutions/javascript/me/best_practice
+
+function arrayMadness(a, b) {
+  let arrA =[];
+  let arrB = [];
+  for (let el of a) {
+    arrA.push(Math.pow(el, 2)); 
+  }
+  for (let el of b) {
+    arrB.push(Math.pow(el, 3)); 
+  }
+  let sumA = arrA.reduce((a,b) => a + b, 0);
+  let sumB = arrB.reduce((a,b) => a + b, 0);
+  return (sumA > sumB) ? true : false;
+}
