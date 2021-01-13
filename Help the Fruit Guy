@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/557af4c6169ac832300000ba/solutions/javascript/me/best_practice
+
+function removeRotten(bagOfFruits){
+  return (!bagOfFruits ||bagOfFruits.length < 1) ? [] : bagOfFruits.map(el => el.replace('rotten', '').toLowerCase());
+}
