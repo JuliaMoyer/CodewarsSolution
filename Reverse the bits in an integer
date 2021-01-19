@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5959ec605595565f5c00002b/solutions/javascript/me/best_practice
+
+function reverseBits(n) {
+  if (n === 0) return 0;
+  let str = '';
+  while (n > 0) {
+    n = n / 2;
+    if (n % 1 !== 0) str+=1;
+    if (n % 1 === 0) str+=0;
+    n = Math.trunc(n);
+  }
+  return parseInt(str, 2);
+}
